@@ -38,7 +38,25 @@
             justify-content: center;
             flex-wrap: wrap; /* 画面が狭い時は自動で縦並びにする */
             margin: 20px 0;
-        }
+        }/* プレイボタンのデザイン */
+.btn-play {
+    display: inline-block;
+    background-color: #4f46e5; /* カッコいい青紫色のボタン */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+/* マウスを乗せたときに色が少し変わる演出 */
+.btn-play:hover {
+    background-color: #4338ca;
+}
+
 
     </style>
 </head>
@@ -94,6 +112,7 @@
 ルール設計、カード効果のパラメータ調整、オンライン同期処理をAIと共に反復（イテレーション）開発し、遊べるクオリティまで完遂。
 
 完成後、Firebaseを活用してオンライン対戦を実装、公開。</p>
+<a href="https://firestore-database-1ff86.web.app" class="btn-play" target="_blank">🎮 ゲームをプレイする</a>
 </div>
 
         <div class="card">
@@ -121,6 +140,8 @@ UX（ユーザー体験）と技術的な工夫
 
 【Webストレージ／保存機能】データ消失を防ぐ永続化
 Webアプリ特有の「ブラウザ更新やリロードでデータが消えてしまう」問題に対処するため、AIを活用してデータの自動保存・永続化機能を実装。ユーザーがコツコツ貯めた努力の記録を絶対に失わせない仕組みを構築。</p>
+<a href="https://my-stamp-app-f6841.web.app" class="btn-play" target="_blank">✨ アプリを使ってみる</a>
+</div>
         </div>
     </div>
 </body>
